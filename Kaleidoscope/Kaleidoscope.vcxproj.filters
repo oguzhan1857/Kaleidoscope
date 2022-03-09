@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DxHook">
+      <UniqueIdentifier>{2328a7ed-918e-423e-be7c-7ca0c7cc9b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patchables">
+      <UniqueIdentifier>{4710c4d8-89f2-435c-85e8-fba5e3c4a0bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{ad9ef0d3-da60-4032-871e-703b60244813}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL">
+      <UniqueIdentifier>{f26e6a50-8646-49f3-9e01-47277c6cd013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\GameClient">
+      <UniqueIdentifier>{77ad998f-5af3-43de-8ba4-42e52acfdd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{deb988eb-f72e-4ab6-b2cf-7df5dc19dc6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Components">
+      <UniqueIdentifier>{5708d506-d1b2-4d08-b7dd-e294b4179eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\GameObject">
+      <UniqueIdentifier>{39287c32-ad2e-442f-a401-3fc9218b919f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\GameObject\AiManager">
+      <UniqueIdentifier>{17334470-6fc9-478a-a59b-d05f76e48426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\SpellBook">
+      <UniqueIdentifier>{152f7cf0-d8eb-4649-a1b6-cad2b7d84bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Globals">
+      <UniqueIdentifier>{f43d5429-07e3-451c-ba55-f0a5675a3bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\BuffManager">
+      <UniqueIdentifier>{2fbfa6d9-86c9-4863-8fe2-0733faec2fbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vectors">
+      <UniqueIdentifier>{ff231354-0c99-4ece-b9cf-c6c8a7e62764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\SpellBook\SpellSlot">
+      <UniqueIdentifier>{f07fed08-d26f-433b-ab62-bf0f319eeb83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Renderer">
+      <UniqueIdentifier>{00e9456f-ce59-4436-9c0c-80bd2dac3291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vectors\Vector2">
+      <UniqueIdentifier>{e83a821a-4c1f-4eba-b7e0-3967944e7760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vectors\Vector3">
+      <UniqueIdentifier>{7055c97d-49f5-430c-82e0-7e7828f74ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vectors\Vector4">
+      <UniqueIdentifier>{5f8b687c-1907-40b7-b9ff-e98cb5c00060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Spells">
+      <UniqueIdentifier>{5c7361b5-e6a2-47d1-af89-abf49e2594f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Spells\SpellData">
+      <UniqueIdentifier>{d3ccfb38-dfbc-4c65-84d4-1f8909643e63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Spells\SpellInfo">
+      <UniqueIdentifier>{1e5ca00f-0252-4805-a194-78212f56ebb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\HudManager">
+      <UniqueIdentifier>{61cb78e3-3cc2-4883-8f6a-db1c9958bd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\HudManager\InputLogic">
+      <UniqueIdentifier>{5be2b2ea-4659-44ad-87e7-1c75532d4588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\HudManager\WorldCursor">
+      <UniqueIdentifier>{7a143266-4e6a-42ee-8ac4-e42c2780e62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\ObjectManager">
+      <UniqueIdentifier>{31ec7f3c-633f-4984-9586-6f4cc3182b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\HudManager\SpellLogic">
+      <UniqueIdentifier>{ca193825-b95a-431c-ada6-e2257604ebbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\MenuGUI">
+      <UniqueIdentifier>{6f8712e4-5959-4366-b563-7f5580153efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\MenuGUI\TacticalMap">
+      <UniqueIdentifier>{c6555573-0494-43a9-aacb-95cec407ddc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\NavMesh">
+      <UniqueIdentifier>{712ddab2-f605-4105-adb6-5a53225ef975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\NetClient">
+      <UniqueIdentifier>{2e233e1b-f719-4e6d-9951-1624e56068f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Utility\External">
+      <UniqueIdentifier>{dc185952-7525-494c-8d7e-f4379ee599a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\External\ImGui">
+      <UniqueIdentifier>{849dee73-a693-4e42-b7cc-75f53d32a69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Console">
+      <UniqueIdentifier>{cfe9dca2-c135-44f7-a2e6-afc9e8d8ae26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Singleton">
+      <UniqueIdentifier>{b3387921-6a3a-4b44-95f5-08ac4dda8d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Framework">
+      <UniqueIdentifier>{e6bb485b-7a26-4e8d-beab-90f506d671f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\WndProcEvent">
+      <UniqueIdentifier>{5314c1fb-c1eb-408e-b45b-31d0ba9f207a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\External\Fonts">
+      <UniqueIdentifier>{b42948d9-87de-4fc7-8662-2882dac0e6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{f0abe75a-aa05-458a-9d23-e41388cf08c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Exports">
+      <UniqueIdentifier>{0e889c9f-dccc-497a-84e0-66e2ea909c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Launcher">
+      <UniqueIdentifier>{c5bff596-c90b-41b1-b146-ae41c643897b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility\Encryption">
+      <UniqueIdentifier>{ceb62f78-9161-4969-a25d-3f96f8719d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\GameObject\CharacterDataStack">
+      <UniqueIdentifier>{a7f780d0-e7fa-4844-a673-e68456031b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{4187f224-c420-47e6-8084-27eb68bf698f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Spells\SpellCastInfo">
+      <UniqueIdentifier>{db41a5aa-bdc7-4a49-96d0-26d1778adae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\Spells\SpellInstanceClient">
+      <UniqueIdentifier>{c3cf1648-d915-4f97-b8bc-5d6a115e3f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\MissileManager">
+      <UniqueIdentifier>{b389d2ff-532d-4bb6-a614-b5ab4e2f6fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoL\ChampionManager">
+      <UniqueIdentifier>{d41fa8f5-2b2c-443c-86f9-4eda04e4bf77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DxHook.h">
+      <Filter>DxHook</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Patchables.h">
+      <Filter>Patchables</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Patchables</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClient.h">
+      <Filter>LoL\GameClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Utility\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Menu\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>LoL\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AiManager.h">
+      <Filter>LoL\GameObject\AiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellBook.h">
+      <Filter>LoL\SpellBook</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellInfo.h">
+      <Filter>LoL\Spells\SpellInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellData.h">
+      <Filter>LoL\Spells\SpellData</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellSlot.h">
+      <Filter>LoL\SpellBook\SpellSlot</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>LoL\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffManager.h">
+      <Filter>LoL\BuffManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>LoL\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Vectors\Vector2</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Vectors\Vector3</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>Vectors\Vector4</Filter>
+    </ClInclude>
+    <ClInclude Include="HudManager.h">
+      <Filter>LoL\HudManager</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldCursor.h">
+      <Filter>LoL\HudManager\WorldCursor</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLogic.h">
+      <Filter>LoL\HudManager\InputLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>LoL\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellLogic.h">
+      <Filter>LoL\HudManager\SpellLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="TacticalMap.h">
+      <Filter>LoL\MenuGUI\TacticalMap</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuGUI.h">
+      <Filter>LoL\MenuGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMesh.h">
+      <Filter>LoL\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="NetClient.h">
+      <Filter>LoL\NetClient</Filter>
+    </ClInclude>
+    <ClInclude Include="PyExports.h">
+      <Filter>Python\Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Utility\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>Utility\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="Singleton.h">
+      <Filter>Utility\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="PyLauncher.h">
+      <Filter>Python\Launcher</Filter>
+    </ClInclude>
+    <ClInclude Include="WndProcEvent.h">
+      <Filter>Menu\WndProcEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="FontAwesomeIcons.h">
+      <Filter>Utility\External\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption.h">
+      <Filter>Utility\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="FnvHash.h">
+      <Filter>Utility\Encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterDataStack.h">
+      <Filter>LoL\GameObject\CharacterDataStack</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinDatabase.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ChampionManager.h">
+      <Filter>LoL\ChampionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_extend.h">
+      <Filter>Utility\External</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellInstanceClient.h">
+      <Filter>LoL\Spells\SpellInstanceClient</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellCastInfo.h">
+      <Filter>LoL\Spells\SpellCastInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="MissileManager.h">
+      <Filter>LoL\MissileManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DxHook.cpp">
+      <Filter>DxHook</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Utility\External\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Patchables.cpp">
+      <Filter>Patchables</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClient.cpp">
+      <Filter>LoL\GameClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowManager.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Menu\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>LoL\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AiManager.cpp">
+      <Filter>LoL\GameObject\AiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellBook.cpp">
+      <Filter>LoL\SpellBook</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellInfo.cpp">
+      <Filter>LoL\Spells\SpellInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellData.cpp">
+      <Filter>LoL\Spells\SpellData</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellSlot.cpp">
+      <Filter>LoL\SpellBook\SpellSlot</Filter>
+    </ClCompile>
+    <ClCompile Include="Globals.cpp">
+      <Filter>LoL\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffManager.cpp">
+      <Filter>LoL\BuffManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>LoL\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Vectors\Vector2</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Vectors\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>Vectors\Vector4</Filter>
+    </ClCompile>
+    <ClCompile Include="HudManager.cpp">
+      <Filter>LoL\HudManager</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLogic.cpp">
+      <Filter>LoL\HudManager\InputLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldCursor.cpp">
+      <Filter>LoL\HudManager\WorldCursor</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>LoL\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellLogic.cpp">
+      <Filter>LoL\HudManager\SpellLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="TacticalMap.cpp">
+      <Filter>LoL\MenuGUI\TacticalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuGUI.cpp">
+      <Filter>LoL\MenuGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMesh.cpp">
+      <Filter>LoL\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="NetClient.cpp">
+      <Filter>LoL\NetClient</Filter>
+    </ClCompile>
+    <ClCompile Include="PyExports.cpp">
+      <Filter>Python\Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utility\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="PyLauncher.cpp">
+      <Filter>Python\Launcher</Filter>
+    </ClCompile>
+    <ClCompile Include="WndProcEvent.cpp">
+      <Filter>Menu\WndProcEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterDataStack.cpp">
+      <Filter>LoL\GameObject\CharacterDataStack</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinDatabase.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_extend.cpp">
+      <Filter>Utility\External</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellInstanceClient.cpp">
+      <Filter>LoL\Spells\SpellInstanceClient</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellCastInfo.cpp">
+      <Filter>LoL\Spells\SpellCastInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="MissileManager.cpp">
+      <Filter>LoL\MissileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ChampionManager.cpp">
+      <Filter>LoL\ChampionManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
