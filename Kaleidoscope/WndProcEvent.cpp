@@ -13,7 +13,7 @@ void WndProcEvent::window_procedure(HWND hwnd, UINT msg, WPARAM wparam, LPARAM l
 			//WindowManager::instance()->on_key_up(wparam);
 			break;
 		case WM_LBUTTONDBLCLK:
-			//WindowManager::instance()->on_double_click();
+			WindowManager::instance()->on_double_click();
 			break;
 	}
 }

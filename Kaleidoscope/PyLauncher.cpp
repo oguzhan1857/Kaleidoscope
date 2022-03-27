@@ -1,15 +1,18 @@
 #include "pch.h"
 
-#define PYTHON_LIB_PATH L"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310-32\\Lib"
+#define PYTHON_LIB_PATH    L"C:\\Python310-32\\Lib"
+#define SCRIPT_FOLDER      "C:\\Python310-32\\Lib\\leaguescript"
 
 namespace py = boost::python;
 
-
 void PyLauncher::initiliaze()
 {
-	Py_SetPath(PYTHON_LIB_PATH);
+    Py_SetPath(PYTHON_LIB_PATH);
 	init_kaleidoscope();
 	Py_Initialize();
+    char line[255];
+    sprintf_s(line, "import sys\nsys.path.append('%s')", SCRIPT_FOLDER);
+    boost::python::exec(line);
 }
 
 void PyLauncher::remove()
@@ -73,15 +76,4 @@ PyObject* PyLauncher::load_module(const char* file_name)
     }
 
     return script_instance;
-}
-
-void PyLauncher::reload_module(PyObject** instance)
-{
-    try {
-        *instance = PyImport_ReloadModule(*instance);
-    }
-    catch (py::error_already_set const&) {
-        std::string perror_str = traceback();
-        Console::instance()->AddLog("%s", perror_str.c_str());
-    }
 }

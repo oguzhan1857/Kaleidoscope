@@ -286,14 +286,10 @@ BOOST_PYTHON_MODULE(kaleidoscope)
 	class_<InputLogic>("InputLogic", init<>())
 		.def("IssueClick", &InputLogic::issue_click);
 
-	class_<SpellLogic>("SpellLogic")
-		.def("SendSpellCastPacket", &SpellLogic::send_spell_cast_packet);
-
 	class_<HudManager>("HudManager")
 		.def("GetInstance",	   &HudManager::instance,         return_exist_obj())
 		.def("GetWorldCursor", &HudManager::get_world_cursor, return_exist_obj())
-		.def("GetInputLogic",  &HudManager::get_input_logic,  return_exist_obj())
-		.def("GetSpellLogic",  &HudManager::get_spell_logic,  return_exist_obj());
+		.def("GetInputLogic",  &HudManager::get_input_logic,  return_exist_obj());
 
 	class_<NavigationPath>("NavigationPath")
 		.def("GetNextWaypoint", &NavigationPath::get_next_waypoint)
@@ -358,7 +354,7 @@ BOOST_PYTHON_MODULE(kaleidoscope)
 	def("GetAllHeroes",   &CPyObjectManager_GetHeroes);
 	def("GetAllyHeroes",  &CPyObjectManager_GetAllyHeroes);
 	def("GetEnemyHeroes", &CPyObjectManager_GetEnemyHeroes);
-	def("GetMinios",      &CPyObjectManager_GetMinions);
+	def("GetMinions",     &CPyObjectManager_GetMinions);
 
 	def("IsPressed",      &WndProcEvent::is_key_pressed);
 	def("GetTime",        &Globals::get_game_time);

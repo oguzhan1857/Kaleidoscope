@@ -94,21 +94,21 @@ void Component::py_render()
 
 void Component::on_key_up(WPARAM key)
 {
-	try {
-		boost::python::object object(boost::python::handle<>(boost::python::borrowed(handler)));
-		object.attr("OnKeyUp")(key);
-	}
-	catch (boost::python::error_already_set const&) {
-		std::string perror_str = PyLauncher::traceback();
-		Console::instance()->AddLog("%s", perror_str.c_str());
-	}
+
 }
 
 void Component::on_key_down(WPARAM key)
 {
+
+}
+
+void Component::py_on_double_click()
+{
+	if (!handler)
+		return;
+
 	try {
-		boost::python::object object(boost::python::handle<>(boost::python::borrowed(handler)));
-		object.attr("OnKeyDown")(key);
+		boost::python::call<void>(PyObject_GetAttrString(handler, "OnDoubleClick"));
 	}
 	catch (boost::python::error_already_set const&) {
 		std::string perror_str = PyLauncher::traceback();
@@ -118,17 +118,10 @@ void Component::on_key_down(WPARAM key)
 
 void Component::on_double_click()
 {
-	try {
-		boost::python::object object(boost::python::handle<>(boost::python::borrowed(handler)));
-		object.attr("OnDoubleClick")();
-	}
-	catch (boost::python::error_already_set const&) {
-		std::string perror_str = PyLauncher::traceback();
-		Console::instance()->AddLog("%s", perror_str.c_str());
-	}
+	py_on_double_click();
+	for (auto& component : child_list)
+		component->on_double_click();
 }
-
-
 
 Window::Window(PyObject* handler, std::string label)
 {

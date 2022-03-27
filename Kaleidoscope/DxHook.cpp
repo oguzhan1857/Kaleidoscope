@@ -83,24 +83,6 @@ void DxHook::init_imgui(IDXGISwapChain* device)
 
 static bool g_console_flag = true;
 
-
-void DrawCircle(Vector3 world_pos, float radius, ImColor color, float thickness)
-{
-	float step = 6.2831f / 100;
-	float theta = 0.f;
-	ImVec2 points[200];
-
-	for (int i = 0; i < 200; i++, theta += step) {
-		auto world_space = Vector3(world_pos.x + radius * cos(theta), world_pos.y, world_pos.z - radius * sin(theta));
-
-		Vector2 screen_space = Renderer::instance()->world_to_screen(world_space);
-		points[i].x = screen_space.x;
-		points[i].y = screen_space.y;
-	}
-
-	ImGui::GetBackgroundDrawList()->AddPolyline(points, 200, color, true, thickness);
-}
-
 void DxHook::render()
 {
 	ImGui_ImplDX11_NewFrame();
@@ -110,9 +92,9 @@ void DxHook::render()
 	WindowManager::instance()->update();
 	WindowManager::instance()->render();
 
-	ImGui::Begin("Time");
-	ImGui::Text("%f", Globals::get_game_time());
-	ImGui::End();
+	//ImGui::Begin("Time");
+	//ImGui::Text("%f", Globals::get_game_time());
+	//ImGui::End();
 
 	
 	Console::instance()->Draw("Console", &g_console_flag);

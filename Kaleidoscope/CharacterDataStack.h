@@ -31,5 +31,5 @@ public:
 	CharacterStackData          base_skin;
 
 	void update(bool change);
-	void push(const char* model, std::int32_t skin);
+	int  push(const char* model, std::int32_t skin);
 };

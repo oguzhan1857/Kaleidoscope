@@ -11,20 +11,18 @@ void Core::load()
 {
 	Core::initialize();
 	
-	
 	while (GameClient::instance()->get_state() != GAME_CLIENT_RUN) {
-		std::this_thread::sleep_for(1s);
+		std::this_thread::sleep_for(500ms);
 	}
-
-	Data::SkinDatabase::load();
-
+	
 	Console::instance()->AddLog("[Core] Loaded");
+	
+	Data::SkinDatabase::load();
 	PyLauncher::initiliaze();
 	DxHook::initiliaze();
 	
 	PyLauncher::load_module("orbwalker");
 	PyLauncher::load_module("skinchanger");
-	PyLauncher::load_module("spelltracker");
 
 	while (true) {
 		if (GetAsyncKeyState(VK_F8) && 1) {

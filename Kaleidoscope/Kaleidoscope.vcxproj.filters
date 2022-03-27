@@ -4,9 +4,6 @@
     <Filter Include="DxHook">
       <UniqueIdentifier>{2328a7ed-918e-423e-be7c-7ca0c7cc9b5e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Patchables">
-      <UniqueIdentifier>{4710c4d8-89f2-435c-85e8-fba5e3c4a0bc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Core">
       <UniqueIdentifier>{ad9ef0d3-da60-4032-871e-703b60244813}</UniqueIdentifier>
     </Filter>
@@ -145,6 +142,9 @@
     </Filter>
     <Filter Include="LoL\ChampionManager">
       <UniqueIdentifier>{d41fa8f5-2b2c-443c-86f9-4eda04e4bf77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patchables">
+      <UniqueIdentifier>{4710c4d8-89f2-435c-85e8-fba5e3c4a0bc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

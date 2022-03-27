@@ -28,8 +28,10 @@ public:
 	virtual void add_child(Component* component);
 	virtual void clear();
 
+
 	virtual void on_key_up(WPARAM up);
 	virtual void on_key_down(WPARAM key);
+	virtual void py_on_double_click();
 	virtual void on_double_click();
 	
 	Component* get_parent() { return parent; }
